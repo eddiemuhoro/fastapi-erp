@@ -5,8 +5,8 @@ router = APIRouter()
 
 @router.get("/suppliers")
 def get_suppliers():
-    return execute_query('SELECT * FROM suppliers LIMIT 10;')
+    return execute_query('SELECT * FROM supplier LIMIT 10;')
 
 @router.get("/suppliers/{supplier_id}")
 def get_supplier(supplier_id: int):
-    return execute_single_query('SELECT * FROM suppliers WHERE id = %s;', (supplier_id,))
+    return execute_single_query('SELECT * FROM supplier WHERE id = %s;', (supplier_id,))

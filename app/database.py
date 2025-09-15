@@ -4,10 +4,10 @@ from contextlib import contextmanager
 
 def get_db_connection():
     return mysql.connector.connect(
-        host=os.environ.get('MYSQL_HOST', 'localhost'),
+        host=os.environ.get('MYSQL_HOST', '26.147.247.74'),
         user=os.environ.get('MYSQL_USER', 'root'),
-        password=os.environ.get('MYSQL_PASSWORD', '***'),
-        database=os.environ.get('MYSQL_DATABASE', 'wholesale')
+        password=os.environ.get('MYSQL_PASSWORD', '123*/'),
+        database=os.environ.get('MYSQL_DATABASE', 'kipusa_cyber')
     )
 
 @contextmanager

@@ -16,8 +16,8 @@ class Settings(BaseSettings):
     mysql_max_overflow: int = 20
     
     # API settings
-    api_title: str = "Wholesale API"
-    api_description: str = "API for wholesale business data"
+    api_title: str = "Crystal API"
+    api_description: str = "API for  business data"
     api_version: str = "1.0.0"
     
     # Security settings

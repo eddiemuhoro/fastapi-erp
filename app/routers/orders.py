@@ -3,10 +3,10 @@ from app.database import execute_query, execute_single_query
 
 router = APIRouter()
 
-@router.get("/orders")
-def get_orders():
-    return execute_query('SELECT * FROM orders LIMIT 10;')
+@router.get("/sales")
+def get_sales():
+    return execute_query('SELECT * FROM sales LIMIT 10;')
 
-@router.get("/orders/{order_id}")
-def get_order(order_id: int):
-    return execute_single_query('SELECT * FROM orders WHERE id = %s;', (order_id,))
+@router.get("/sales/{sale_id}")
+def get_sale(sale_id: int):
+    return execute_single_query('SELECT * FROM sales WHERE id = %s;', (sale_id,))
